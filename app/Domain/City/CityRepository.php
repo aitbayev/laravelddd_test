@@ -9,8 +9,7 @@ namespace App\Domain\City;
 
 use App\Domain\City\Aggregate\City;
 
-interface CityRepository
-{
+interface CityRepository {
     public function create(array $data): array;
 
     public function update(City $city): void;
@@ -20,5 +19,4 @@ interface CityRepository
     public function findById(int $cityId): City;
 
     public function delete(int cityId): void;
-
 }

@@ -22,23 +22,19 @@ use App\Domain\City\ValueObject\Name;
             $name);
     }
 
-    public function id(): int
-    {
+    public function id(): int {
         return $this->id;
     }
 
-    public function name(): Name
-    {
+    public function name(): Name {
         return $this->name;
     }
 
-    public function updateName(string $name): void
-    {
+    public function updateName(string $name): void {
         $this->name = Name::fromString($name);
     }
 
-    public function asArray(): array
-    {
+    public function asArray(): array {
         return [
             'id' => $this->id()->value(),
             'name' => $this->name()->value()

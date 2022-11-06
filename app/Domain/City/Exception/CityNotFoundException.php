@@ -5,6 +5,7 @@
 
 namespace App\Domain\City\Exception;
 
-class CityNotFoundException extends \Exception
+class CityNotFoundException extends \Exception {
 
-{
+}
+
